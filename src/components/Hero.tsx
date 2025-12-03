@@ -70,7 +70,7 @@ export function Hero() {
                 </div>
                 <div>
                   <p className="text-sm opacity-70">Localização</p>
-                  <p className="font-semibold">Rod. AL-220, Nº 65</p>
+                  <p className="font-semibold">Rod. AL-220, Nº 65, Jardim Esperança</p>
                 </div>
               </div>
             </div>
