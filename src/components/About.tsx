@@ -79,8 +79,8 @@ export function About() {
             <p className="text-primary-foreground/80 text-sm">Atendimento</p>
           </div>
           <div className="text-center p-6 bg-accent rounded-xl">
-            <p className="text-3xl md:text-4xl font-bold text-accent-foreground mb-1">AL-220</p>
-            <p className="text-accent-foreground/80 text-sm">Localização</p>
+            <p className="text-lg md:text-xl font-bold text-accent-foreground mb-1">Rod. AL-220, Nº 65</p>
+            <p className="text-accent-foreground/80 text-sm">Jardim Esperança</p>
           </div>
         </div>
       </div>
