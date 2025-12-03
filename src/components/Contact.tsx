@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Clock, Instagram } from "lucide-react";
+import contactService from "@/assets/contact-service.jpg";
 
 export function Contact() {
   return (
@@ -89,23 +90,32 @@ export function Contact() {
             </div>
           </div>
 
-          {/* CTA Card */}
-          <div className="bg-hero-gradient p-8 md:p-12 rounded-2xl flex flex-col justify-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Pronto para agendar seu serviço?
-            </h3>
-            <p className="text-primary-foreground/80 mb-8 text-lg">
-              Entre em contato pelo WhatsApp e receba atendimento rápido e personalizado. Estamos aqui para ajudar você!
-            </p>
-            <a
-              href="https://wa.me/5582996954908"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-red-brand-light text-accent-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all duration-200 shadow-button hover:shadow-lg w-full sm:w-auto"
-            >
-              <Phone size={20} />
-              Chamar no WhatsApp
-            </a>
+          {/* CTA Card with Image */}
+          <div className="space-y-6">
+            <div className="rounded-2xl overflow-hidden shadow-card">
+              <img 
+                src={contactService} 
+                alt="Atendimento ao cliente Ponto Certo Auto Center" 
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="bg-hero-gradient p-8 md:p-12 rounded-2xl flex flex-col justify-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
+                Pronto para agendar seu serviço?
+              </h3>
+              <p className="text-primary-foreground/80 mb-8 text-lg">
+                Entre em contato pelo WhatsApp e receba atendimento rápido e personalizado. Estamos aqui para ajudar você!
+              </p>
+              <a
+                href="https://wa.me/5582996954908"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-red-brand-light text-accent-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all duration-200 shadow-button hover:shadow-lg w-full sm:w-auto"
+              >
+                <Phone size={20} />
+                Chamar no WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </div>
