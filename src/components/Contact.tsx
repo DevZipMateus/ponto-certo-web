@@ -3,20 +3,20 @@ import happyCustomer from "@/assets/happy-customer.jpg";
 
 export function Contact() {
   return (
-    <section id="contato" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+    <section id="contato" className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
             Entre em <span className="text-accent">contato</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg px-2">
             Estamos prontos para atender você. Entre em contato conosco e agende seu serviço.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Info Cards */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <div className="flex items-start gap-4 p-6 bg-card rounded-xl shadow-soft border border-border">
               <div className="p-3 bg-accent/10 rounded-lg shrink-0">
                 <Phone className="w-6 h-6 text-accent" />
@@ -91,28 +91,28 @@ export function Contact() {
           </div>
 
           {/* CTA Card with Image */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <div className="rounded-2xl overflow-hidden shadow-card">
               <img 
                 src={happyCustomer} 
                 alt="Cliente satisfeito recebendo as chaves do carro" 
-                className="w-full h-64 object-cover"
+                className="w-full h-48 sm:h-56 md:h-64 object-cover"
               />
             </div>
-            <div className="bg-hero-gradient p-8 md:p-12 rounded-2xl flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
+            <div className="bg-hero-gradient p-6 sm:p-8 md:p-12 rounded-2xl flex flex-col justify-center">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-foreground mb-3 sm:mb-4">
                 Pronto para agendar seu serviço?
               </h3>
-              <p className="text-primary-foreground/80 mb-8 text-lg">
+              <p className="text-primary-foreground/80 mb-6 sm:mb-8 text-base sm:text-lg">
                 Entre em contato pelo WhatsApp e receba atendimento rápido e personalizado. Estamos aqui para ajudar você!
               </p>
               <a
                 href="https://wa.me/5582996954908"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-red-brand-light text-accent-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all duration-200 shadow-button hover:shadow-lg w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-red-brand-light text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg transition-all duration-200 shadow-button hover:shadow-lg w-full sm:w-auto"
               >
-                <Phone size={20} />
+                <Phone size={18} className="sm:w-5 sm:h-5" />
                 Chamar no WhatsApp
               </a>
             </div>

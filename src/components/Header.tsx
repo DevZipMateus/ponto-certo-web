@@ -17,10 +17,10 @@ const navLinks = [{
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return <header className="fixed top-0 left-0 right-0 z-50 bg-primary backdrop-blur-md border-b border-primary-foreground/10 shadow-soft">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <a href="#inicio" className="flex items-center gap-3">
-            <img src={logo} alt="Ponto Certo Auto Center" className="h-36 w-auto" />
+            <img src={logo} alt="Ponto Certo Auto Center" className="h-20 sm:h-28 md:h-36 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

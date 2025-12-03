@@ -5,12 +5,12 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-primary py-8 sm:py-12">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Logo & Description */}
-          <div>
-            <img src={logo} alt="Ponto Certo Auto Center" className="h-16 w-auto mb-4 brightness-0 invert" />
+          <div className="sm:col-span-2 md:col-span-1">
+            <img src={logo} alt="Ponto Certo Auto Center" className="h-12 sm:h-16 w-auto mb-3 sm:mb-4 brightness-0 invert" />
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               O ponto certo para o seu carro. Confiança e precisão em cada serviço.
             </p>
