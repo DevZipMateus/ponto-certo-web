@@ -1,4 +1,5 @@
 import { Gauge, Disc3, Cpu, Settings, CircleDot, Wrench } from "lucide-react";
+import servicesTools from "@/assets/services-tools.jpg";
 
 const services = [
   {
@@ -44,6 +45,25 @@ export function Services() {
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Oferecemos uma ampla gama de serviços automotivos com qualidade e garantia. Confie seu veículo a quem entende.
           </p>
+        </div>
+
+        {/* Services Image Banner */}
+        <div className="relative rounded-2xl overflow-hidden mb-12 shadow-card">
+          <img 
+            src={servicesTools} 
+            alt="Ferramentas e peças automotivas Ponto Certo Auto Center" 
+            className="w-full h-64 md:h-80 object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex items-center">
+            <div className="p-8 md:p-12 max-w-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
+                Equipamentos de qualidade
+              </h3>
+              <p className="text-primary-foreground/90">
+                Trabalhamos com as melhores ferramentas e peças do mercado para garantir um serviço de excelência.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

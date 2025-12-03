@@ -1,4 +1,5 @@
 import { Target, Eye, Heart, Shield, Zap, Users, Award } from "lucide-react";
+import aboutTeam from "@/assets/about-team.jpg";
 
 const values = [
   { icon: Shield, label: "Transparência" },
@@ -19,6 +20,26 @@ export function About() {
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Fundado em dezembro de 2025, atuamos no mercado de manutenção de automóveis com excelência e dedicação.
           </p>
+        </div>
+
+        {/* Image and intro */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 items-center">
+          <div className="rounded-2xl overflow-hidden shadow-card">
+            <img 
+              src={aboutTeam} 
+              alt="Equipe Ponto Certo Auto Center" 
+              className="w-full h-80 object-cover"
+            />
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Nossa equipe está pronta para atendê-lo</h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              No Ponto Certo Auto Center, contamos com profissionais experientes e qualificados, prontos para oferecer o melhor serviço automotivo da região.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Nossa oficina está equipada com ferramentas modernas e utilizamos peças de qualidade para garantir que seu veículo receba o tratamento que merece.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
