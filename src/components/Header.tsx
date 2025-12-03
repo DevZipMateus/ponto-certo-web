@@ -20,7 +20,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <a href="#inicio" className="flex items-center gap-3">
-            <img src={logo} alt="Ponto Certo Auto Center" className="h-20 w-auto" />
+            <img src={logo} alt="Ponto Certo Auto Center" className="h-36 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
