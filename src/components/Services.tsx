@@ -1,5 +1,7 @@
 import { Gauge, Disc3, Cpu, Settings, CircleDot, Wrench } from "lucide-react";
 import servicesTools from "@/assets/services-tools.jpg";
+import mechanicWork from "@/assets/mechanic-work.jpg";
+import engineRepair from "@/assets/engine-repair.jpg";
 
 const services = [
   {
@@ -66,7 +68,7 @@ export function Services() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {services.map((service, index) => (
             <article
               key={service.title}
@@ -82,7 +84,37 @@ export function Services() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        {/* Additional Images Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="relative rounded-2xl overflow-hidden shadow-card group">
+            <img 
+              src={mechanicWork} 
+              alt="Mecânico trabalhando em suspensão e freios" 
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-primary-foreground">Suspensão e freios</h4>
+                <p className="text-primary-foreground/80 text-sm">Profissionais especializados</p>
+              </div>
+            </div>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-card group">
+            <img 
+              src={engineRepair} 
+              alt="Reparo de motor automotivo" 
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-primary-foreground">Motor e injeção</h4>
+                <p className="text-primary-foreground/80 text-sm">Diagnóstico preciso</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center">
           <a
             href="https://wa.me/5582996954908"
             target="_blank"
