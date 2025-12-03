@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Clock, Instagram } from "lucide-react";
-import contactService from "@/assets/contact-service.jpg";
+import happyCustomer from "@/assets/happy-customer.jpg";
 
 export function Contact() {
   return (
@@ -94,8 +94,8 @@ export function Contact() {
           <div className="space-y-6">
             <div className="rounded-2xl overflow-hidden shadow-card">
               <img 
-                src={contactService} 
-                alt="Atendimento ao cliente Ponto Certo Auto Center" 
+                src={happyCustomer} 
+                alt="Cliente satisfeito recebendo as chaves do carro" 
                 className="w-full h-64 object-cover"
               />
             </div>
