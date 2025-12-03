@@ -1,14 +1,20 @@
 import { Phone, Clock, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
+import heroBg from "@/assets/hero-bg.jpg";
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen bg-hero-gradient pt-20 flex items-center overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-accent rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary-foreground rounded-full blur-3xl" />
-      </div>
+    <section 
+      id="inicio" 
+      className="relative min-h-screen pt-20 flex items-center overflow-hidden"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-primary/85" />
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
